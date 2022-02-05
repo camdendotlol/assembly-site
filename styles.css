@@ -1,0 +1,12 @@
+html {
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+h1 { 
+  text-align: center;
+}
