@@ -3,19 +3,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
   <title>Camden WTF</title>
 </head>
 <body>
   <main>
-    <h1>Hello</h1>
+    <h1>Hello from Assembly</h1>
     <p>This website is being served by an Assembly web server called <a href="https://github.com/nemasu/asmttpd">asmttpd</a>.</p>
     <p>I think that's pretty cool.</p>
     <p>On the backend, it's lightning fast. But since you also have to wait for this page to transfer over the internet, there are diminishing returns on server speed for simple sites like this.</p>
     <figure>
-      <img src="horse.webp" alt="galloping horse" style="height: 250px">
+      <img src="horse.webp" alt="black and white horse drawing" style="height: 250px">
       <figcaption>speedy like a horse</figcaption>
     </figure>
+    <p>While you might not notice the exceptional speed from your end, the <code>asmttpd</code> server program launches instantly. According to the <code>top</code> utility, <code>asmttpd</code> uses just 4 KB of memory while running. And it doesn't require any extra libraries. Compare that to the typical server frameworks in use today, which require all kinds of scripting languages, packages, and other nonsense just to run.</p>
+    <figure>
+      <img src="fish.webp" alt="black and white fish drawing" style="width: 250px">
+      <figcaption>fish<br />(just going for the O'Reilly aesthetic here)</figcaption>
+    </figure>
+    <p>One complication with <code>asmttpd</code> is its lack of SSL support, which is very important to me. The developer explains on GitHub that SSL and its associated cryptography are just too complicated to implement in Assembly. If I were to make a performance-critical backend for a serious project, I would probably go with a Rust framework like <a href="https://rocket.rs/">Rocket</a> or <a href="https://actix.rs/">Actix</a>.</p>
+    <p>In theory, however, there's no reason you couldn't serve a full-scale React application with this and see some nice serverside performance improvements.</p>
   </main>
 </body>
 </html>

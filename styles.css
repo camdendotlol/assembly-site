@@ -1,5 +1,6 @@
 html {
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 main {
@@ -15,4 +16,10 @@ figure {
   width: 100%;
   margin: auto;
   text-align: center;
+}
+
+code {
+  padding: 3px;
+  background: #ddd;
+  border-radius: 4px;
 }
