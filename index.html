@@ -11,20 +11,22 @@
   <body>
     <main>
       <h1>Hello from Assembly</h1>
-      <p>This website is being served by an Assembly web server called <a href="https://github.com/nemasu/asmttpd">asmttpd</a>.</p>
+      <p>This website is being served by an Assembly web server called <a href="https://2ton.com.au/rwasa/">rwasa</a>.</p>
       <p>I think that's pretty cool.</p>
       <p>On the backend, it's lightning fast. But since you also have to wait for this page to transfer over the internet, there are diminishing returns on server speed for simple sites like this.</p>
       <figure>
         <img src="horse.webp" alt="black and white horse drawing" style="height: 250px">
         <figcaption>speedy like a horse</figcaption>
       </figure>
-      <p>While you might not notice the exceptional speed from your end, the <code>asmttpd</code> server program launches instantly. According to the <code>top</code> utility, <code>asmttpd</code> uses just 4 KB of memory while running. And it doesn't require any extra libraries. Compare that to the typical server frameworks in use today, which require all kinds of scripting languages, packages, and other nonsense just to run.</p>
+      <p>While you might not notice the exceptional speed from your end, the <code>rwasa</code> server program launches instantly. According to the <code>top</code> utility, <code>rwasa</code> uses just a few kilobytes of memory while running. And it doesn't require any extra libraries. Compare that to the typical server frameworks in use today, which require all kinds of scripting languages, packages, and other nonsense just to run.</p>
+      <p><code>rwasa</code> even supports SSL, as you can see by the beautiful green lock icon in your URL bar.</p>
       <figure>
         <img src="fish.webp" alt="black and white fish drawing" style="width: 250px">
         <figcaption>fish<br />(just going for the O'Reilly aesthetic here)</figcaption>
       </figure>
-      <p>One complication with <code>asmttpd</code> is its lack of SSL support, which is very important to me. The developer explains on GitHub that SSL and its associated cryptography are just too complicated to implement in Assembly. If I were to make a performance-critical backend for a serious project, I would probably go with a Rust framework like <a href="https://rocket.rs/">Rocket</a> or <a href="https://actix.rs/">Actix</a>. There is also another more full-featured Assembly web server called <a href="https://2ton.com.au/rwasa/">rwasa</a> that I might check out.</p>
-      <p>In theory, however, there's no reason you couldn't serve a full-scale React application with this and see some nice serverside performance improvements.</p>
+      <p>Of course, there is the issue that my lack of Assembly knowledge makes this server a black box for me, so I can't easily dig into it if I need to make changes or achieve an understanding of its internals.</p>
+      <p>If I were to make a performance-critical backend for a serious project, I would probably go with a Rust framework like <a href="https://rocket.rs/">Rocket</a> or <a href="https://actix.rs/">Actix</a>. Most of the time, however, a boring old JavaScript or Python server is just fine.</p>
+      <p>In theory, however, there's no reason you couldn't serve a full-scale production application with this and see some nice serverside performance improvements.</p>
     </main>
   </body>
 </html>
